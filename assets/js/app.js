@@ -23,7 +23,7 @@ $(".naveLink").on("click", function (e) {
   e.preventDefault();
   $(".sectionConteiner").hide();
   const target = $(this).data("target");
-  $(`#${target}`).fadeIn(1000);
+  $(`#${target}`).fadeIn(500);
 });
 
 // ================naviget-to-section-from the - dashbord- end -task=====
