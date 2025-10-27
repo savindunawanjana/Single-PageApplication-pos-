@@ -127,6 +127,7 @@ justify-content: space-around;
   border-radius: 100%;
 }
 /* =====================dashbord-End=========================== */
+
     /* ==============================SectionPages-start================================ */
 
       section {
@@ -149,10 +150,12 @@ justify-content: space-around;
 
 /* ==============================CustormerPage-content-start================================ */
 
+     /* -----------------------------------Inputfild-said-developmentStart---------------------------------- */
+
     .mainBoxConteiner{
 width: 90vw;
 height: 99vh;
-background-color: rgb(94, 3, 18);
+ background-color: rgb(0, 0, 48);
 border-radius: 10px;
 display: flex;
 
@@ -164,7 +167,7 @@ display: flex;
     .mainBoxConteiner .inputFildsDiv{
 width: 40vw;
 height: 99vh;
-background-color: rgb(11, 148, 6);
+ background-color: rgb(0, 0, 48);
 border-radius: 10px;
 
 
@@ -174,7 +177,7 @@ border-radius: 10px;
 width: 52.7vw;
 height: 99vh;
 margin-left: 0.1vw;
-background-color: rgb(132, 141, 5);
+ background-color: rgb(0, 0, 48);
 border-radius: 10px;
 
 
@@ -184,7 +187,7 @@ border-radius: 10px;
    .mainBoxConteiner .inputFildsDiv .lblAbove{
      font-size: 17px;
      font-style: initial;
-      color: rgb(0, 0, 0);
+      color: rgb(255, 253, 253);
        font-weight: 600;
       
 
@@ -252,5 +255,211 @@ margin-top: 5vh;
     .inputFildsDiv  .buttenBox #savebtnId{
       margin-left: 40px;
     }
+    /* -----------------------------------Inputfild-said-developmentEnd---------------------------------- */
+
+
+    /* -----------------------------------table-said-developmentStart---------------------------------- */
+
+    .tableDiv .tableBox{
+
+      margin-top: 10vw;
+      width: 50vw;
+      height:700px ;
+      background-color: rgb(0, 0, 48);
+
+     }
+
+
+     .tableBox .tableMain{
+
+      border: 1px solid rgb(9, 204, 2);
+width: 50vw;
+ height:200px ;
+
+     }
+
+      .tableBox .tableMain .tableHeder{
+        background-color: rgb(235, 0, 0);
+      }
+
+      .tableBox .tableMain tr{
+         border: 1px solid rgb(1, 8, 1);
+        
+      }
+
+      .tableBox .tableMain tr td{
+         border: 1px solid rgba(0, 199, 0, 0.938);
+        
+      }
+
+       .tableBox .tableMain tr th{
+         border: 1px solid rgb(2, 5, 2);
+        
+      }
+
+
+
+
+    /* -----------------------------------table-said-developmentEnd---------------------------------- */
 
 /* ==============================CustormerPage-content--End================================ */
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ==============================Item-content-start================================ */
+
+     /* -----------------------------------Inputfild-said-developmentStart---------------------------------- */
+
+    .ItemSectionmainBoxConteiner{
+width: 90vw;
+height: 99vh;
+ background-color: rgb(0, 0, 48);
+border-radius: 10px;
+display: flex;
+
+
+
+    }
+
+
+    .ItemSectionmainBoxConteiner .inputFildsDiv{
+width: 40vw;
+height: 99vh;
+ background-color: rgb(0, 0, 48);
+border-radius: 10px;
+
+
+    }
+
+      .ItemSectionmainBoxConteiner .tableDiv{
+width: 52.7vw;
+height: 99vh;
+margin-left: 0.1vw;
+ background-color: rgb(0, 0, 48);
+border-radius: 10px;
+
+
+    }
+
+
+   .ItemSectionmainBoxConteiner .inputFildsDiv .lblAbove{
+     font-size: 17px;
+     font-style: initial;
+      color: rgb(255, 253, 253);
+       font-weight: 600;
+      
+
+    }
+
+    .ItemSectionmainBoxConteiner .inputFildsDiv .lblUnder{
+     
+      color: rgb(175, 4, 4);
+
+    }
+
+    .ItemSectionmainBoxConteiner .inputFildsDiv .box{
+       display: flex;
+      flex-direction: column;
+     background-color: rgba(215, 218, 7, 0);
+     margin-top: 10vh;
+     padding-left:40px;
+      
+
+    }
+
+    .ItemSectionmainBoxConteiner .inputFildsDiv{
+       display: flex;
+      flex-direction: column;
+    }
+
+    .ItemSectionmainBoxConteiner .inputFildsDiv h1{
+      font-weight: 700;
+       margin-left: 40px;
+     margin-top: 60px;
+     font-size: 40px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .ItemSectionmainBoxConteiner .inputFildsDiv input{
+
+height: 37px;
+width:30vw;
+border-radius: 7px;
+border: 2px solid green;
+
+    }
+
+
+ .ItemSectionmainBoxConteiners .inputFildsDiv  .buttenBox{
+display: flex;
+width: 40vw;
+background-color: rgba(14, 138, 2, 0);
+gap: 0.1vw;
+margin-top: 5vh;
+    
+
+
+    }
+
+     .ItemSectionmainBoxConteiner .inputFildsDiv .buttenBox button{
+
+      width: 7vw;
+      height: 4vh;
+      border-radius: 5px;
+
+
+    }
+
+   .ItemSectionmainBoxConteiner .inputFildsDiv  .buttenBox #savebtnId{
+      margin-left: 40px;
+    }
+    /* -----------------------------------Inputfild-said-developmentEnd---------------------------------- */
+
+
+    /* -----------------------------------table-said-developmentStart---------------------------------- */
+
+   .ItemSectionmainBoxConteiner .tableDiv .tableBox{
+
+      margin-top: 10vw;
+      width: 50vw;
+      height:700px ;
+      background-color: rgb(0, 0, 48);
+
+     }
+
+
+    .ItemSectionmainBoxConteiner .tableBox .tableMain{
+
+      border: 1px solid rgb(9, 204, 2);
+width: 50vw;
+ height:200px ;
+
+     }
+
+    .ItemSectionmainBoxConteiner  .tableBox .tableMain .tableHeder{
+        background-color: rgb(235, 0, 0);
+      }
+
+     .ItemSectionmainBoxConteiner .tableBox .tableMain tr{
+         border: 1px solid rgb(1, 8, 1);
+        
+      }
+
+     .ItemSectionmainBoxConteiner .tableBox .tableMain tr td{
+         border: 1px solid rgba(0, 199, 0, 0.938);
+        
+      }
+
+     .ItemSectionmainBoxConteiner  .tableBox .tableMain tr th{
+         border: 1px solid rgb(2, 5, 2);
+        
+      }
+
+
+
+
+    /* -----------------------------------table-said-developmentEnd---------------------------------- */
+
+/* ==============================Item-content--End================================ */
+
