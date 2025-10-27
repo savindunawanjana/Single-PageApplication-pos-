@@ -10,16 +10,60 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/assets/CSS/style.css" />
+    <link rel="stylesheet" href="/assets/CSS/app.css" />
   </head>
   <body>
+    <nav class="dashBord">
+      <ul class="UlConteiner">
+        <li>
+          <a href=""
+            ><img src="assets/Images/Addcustormer2.png" alt="#Custormer"
+          /></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/Images/addItem.png" alt="#Item" /></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/Images/OderAdd.png" alt="#Oder" /></a>
+        </li>
+        <li>
+          <a href=""><img src="assets/Images/logout.png" alt="#logout" /></a>
+        </li>
+      </ul>
+    </nav>
 
+    <section id="homPageid" class="sectionConteiner homPage">HomePage</section>
+    <section id="CustormerPageId" class="sectionConteiner CustormerPage">
+      CustormerPage
+    </section>
+    <section id="ItemPageId" class="sectionConteiner ItemPage">
+      ItemPage
+    </section>
+    <section id="OderPageId" class="sectionConteiner OderPage">
+      OderPage
+    </section>
 
+    <!-- =====================================loginPage-start======================================= -->
+    <div id="loginPageId" class="loginPage">
+      <div class="border-Box">
+        <h1>Login</h1>
 
+        <label for="#">Email</label>
+        <input id="emailId" type="email" />
+        <label for="#">Password</label>
+        <input id="passwordId" type="text" />
 
-    
+        <button id="loginButtenId">Login now</button>
+        <h5>
+          Don't have an account ? <span style="color: blue">Sign up</span>
+        </h5>
+      </div>
+    </div>
+    <!-- =====================================loginPage-end======================================= -->
+
     <!-- ======================================================================= -->
     <script src="assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
