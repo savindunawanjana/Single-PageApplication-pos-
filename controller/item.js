@@ -1,18 +1,18 @@
-import { customer_array } from "../db/Db.js";
-import Customer from "../model/CustormerObject.js";
+import { item_array } from "../db/Db.js";
+import item from "../model/ItemObject.js";
 
 const runmethodAllwas = () => {
-  const customer_id = $("#InputCustormerId");
-  if (customer_array.length === 0) {
-    customer_id.val("100-0001");
+  const item_id = $("#InputItemCode");
+  if (item_array.length === 0) {
+    item_id.val("100-0001");
   } else {
-    const lastCustomer = customer_array[customer_array.length - 1];
-    const custId = lastCustomer.custormerid;
+    const lastItemCode = item_array[item_array.length - 1];
+    const itemId = lastItemCode.itemcode;
 
-    const lastLetter = custId.slice(-1);
+    const lastLetter = itemId.slice(-1);
     if (/\d/.test(lastLetter)) {
       const newNumber = parseInt(lastLetter) + 1;
-      customer_id.val(`100-000${newNumber}`);
+      item_id.val(`100-000${newNumber}`);
     } else {
       console.log(" lastLetter is not a number");
     }
@@ -29,11 +29,11 @@ runmethodAllwas();
 $(document).on("click", ".btn-edit", function () {
   const index = $(this).data("index");
 
-  const customer = customer_array[index];
-  $("#InputCustormerId").val(customer.custormerid);
-  $("#InputCustormerName").val(customer.custormername);
-  $("#InputCustormerAddress").val(customer.custormeraddress);
-  $("#InputCustormerSalary").val(customer.custormersalary);
+  const item = item_array[index];
+  $("#InputItemCode").val(item.itemcode);
+  $("#InputItemName").val(item.itemname);
+  $("#InputItemQty").val(item.itemqty);
+  $("#InputItemPrice").val(item.itemunitPrice);
 });
 
 $(document).on("click", ".btn-delete", function () {
@@ -41,37 +41,40 @@ $(document).on("click", ".btn-delete", function () {
 
   const res = confirm(`Are you sure you want to delete ?`);
   if (res) {
-    customer_array.splice(index, 1);
+    item_array.splice(index, 1);
     lodeTable();
   }
 });
 
 const lodeTable = () => {
-  if (customer_array.length > 0) {
-    $("#tableBodyId").empty();
-    customer_array.forEach((customer, index) => {
+  console.log(item_array.length > 0);
+  console.log("===========");
+  if (item_array.length > 0) {
+    $("#itemtableBodyId").empty();
+    item_array.forEach((item, index) => {
       const dataElement = `
     <tr>
-      <td>${customer.custormerid}</td>
-      <td>${customer.custormername}</td>
-      <td>${customer.custormeraddress}</td>
-      <td>${customer.custormersalary}</td>
+      <td>${item.itemcode}</td>
+      <td>${item.itemname}</td>
+      <td>${item.itemqty}</td>
+      <td>${item.itemunitPrice}</td>
       <td>
         <button class="btn btn-warning btn-edit" data-index="${index}">Edit</button>
         <button class="btn btn-danger btn-delete" data-index="${index}">Delete</button>
       </td>
     </tr>`;
 
-      $("#tableBodyId").append(dataElement);
+      $("#itemtableBodyId").append(dataElement);
     });
   }
 };
-$("#savebtnId").on("click", (e) => {
+$("#itemsavebtnId").on("click", (e) => {
   e.preventDefault();
-  const customer_id = $("#InputCustormerId").val();
-  const customer_name = $("#InputCustormerName").val();
-  const customer_address = $("#InputCustormerAddress").val();
-  const customer_salary = $("#InputCustormerSalary").val();
+  console.log("ebuwa");
+  const item_code = $("#InputItemCode").val();
+  const item_name = $("#InputItemName").val();
+  const Item_Qty = $("#InputItemQty").val();
+  const itemPrice = $("#InputItemPrice").val();
 
   function flashField(selector, lableId) {
     let times = 0;
@@ -91,20 +94,20 @@ $("#savebtnId").on("click", (e) => {
     flash();
   }
 
-  if (!customer_id) {
+  if (!item_code) {
     return;
-  } else if (!customer_name) {
-    flashField("#InputCustormerName", "#lablenameIdUnder");
+  } else if (!item_name) {
+    flashField("#InputItemName", "#lblUnderForItemName");
     return;
-  } else if (!customer_address) {
-    flashField("#InputCustormerAddress", "#lableAdressIdUnders");
+  } else if (!Item_Qty) {
+    flashField("#InputItemQty", "#lblUnderForQty");
     return;
-  } else if (!customer_salary) {
-    flashField("#InputCustormerSalary", "#lblUnderSalary");
+  } else if (!itemPrice) {
+    flashField("#InputItemPrice", "#lblUnderForUntPrice");
     return;
   } else {
-    if (/^100-000/.test(customer_id)) {
-      const lastLetter = customer_id.slice(-1);
+    if (/^100-000/.test(item_code)) {
+      const lastLetter = item_code.slice(-1);
       if (!/\d/.test(lastLetter)) {
         alert("Input does not match for the numbers");
         return;
@@ -115,26 +118,21 @@ $("#savebtnId").on("click", (e) => {
     }
   }
 
-  const customer_id1 = $("#InputCustormerId").val();
-  const customer_name2 = $("#InputCustormerName").val();
-  const customer_address3 = $("#InputCustormerAddress").val();
-  const customer_salary4 = $("#InputCustormerSalary").val();
+  const item_code1 = $("#InputItemCode").val();
+  const item_name2 = $("#InputItemName").val();
+  const item_Qty3 = $("#InputItemQty").val();
+  const item_price4 = $("#InputItemPrice").val();
 
   try {
-    const custormer = new Customer(
-      customer_id1,
-      customer_name2,
-      customer_address3,
-      customer_salary4
-    );
-    customer_array.push(custormer);
-    console.log("Customer added successfully:", custormer);
-    console.log(customer_array[0].custormerid);
+    const itemnew = new item(item_code1, item_name2, item_Qty3, item_price4);
+    item_array.push(itemnew);
+    console.log("Item added successfully:", itemnew);
+    console.log(item_array[0].itemcode);
     runmethodAllwas();
 
-    $("#InputCustormerName").val("");
-    $("#InputCustormerAddress").val("");
-    $("#InputCustormerSalary").val("");
+    $("#InputItemName").val("");
+    $("#InputItemQty").val("");
+    $("#InputItemPrice").val("");
     lodeTable();
   } catch (error) {
     console.log(error);
@@ -153,20 +151,12 @@ const updateAction = $("#updatebtnId").on("click", () => {
     return;
   } else {
     let indexnumber = "no";
-    // customer_array.forEach((custormer, index) => {
-    //   const custormerId2 = custormer.custormerid;
-    //   if (custormerId == custormerId2) {
-    //     indexnumber = index;
-
-    //     break
-    //   }
-    // });
 
     //in this place i cloud not stop the loop from using break key word. so i used  some(()=>{}); insted of forEach(()=>{});
     customer_array.some((customer, index) => {
       if (custormerId === customer.custormerid) {
         indexnumber = index;
-        return true;
+        return true; // ✅ stops loop
       }
       return false;
     });
@@ -185,6 +175,5 @@ const updateAction = $("#updatebtnId").on("click", () => {
       lodeTable();
     }
     lodeTable();
-    runmethodAllwas();
   }
 });

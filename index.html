@@ -50,32 +50,32 @@
           <h1>Custormer Manage</h1>
 
           <div class="box">
-            <label class="lblAbove" for="#CustormerId">Custormer ID</label>
-            <input type="text" />
-            <label class="lblUnder" for="#respons"
+            <label class="lblAbove" for="">Custormer ID</label>
+            <input id="InputCustormerId" type="text" />
+            <label style="display: none;" id="lblUnderCustormerId" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
             <br />
-            <label class="lblAbove" for="#CustormerName">Custormer Name</label>
-            <input type="text" />
-            <label class="lblUnder" for="#respons"
+            <label class="lblAbove" for="">Custormer Name</label>
+            <input id="InputCustormerName" type="text" />
+            <label style="display: none;" id="lablenameIdUnder" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
             <br />
-            <label class="lblAbove" for="#CustormerAdress"
+            <label class="lblAbove" for=""
               >Custormer Adress</label
             >
-            <input type="text" />
-            <label class="lblUnder" for="#respons"
+            <input id="InputCustormerAddress" type="text" />
+            <label style="display: none;" id="lableAdressIdUnders" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
             <br />
-            <label class="lblAbove" for="#CustormerId">Custormer Salary</label>
-            <input type="number" />
-            <label class="lblUnder" for="#respons"
+            <label class="lblAbove" for="">Custormer Salary</label>
+            <input id="InputCustormerSalary" type="number" />
+            <label style="display: none;" id="lblUnderSalary" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
@@ -83,7 +83,7 @@
           <div class="buttenBox">
             <button id="savebtnId">Save</button>
             <button id="updatebtnId">Update</button>
-            <button id="getAllbtnId">Get All</button>
+            <button id="RefreshbtnId">Refresh</button>
             <button id="clearbtnId">Clear All</button>
           </div>
         </div>
@@ -101,9 +101,9 @@
 
     </tr>
         </thead>
-        <tbody class="tableBodyId">
+        <tbody id="tableBodyId" class="tableBodyId">
 
-            <tr>
+            <!-- <tr>
             <td>100-0001</td>
             <td>Savindu</td>
             <td>galle</td>
@@ -125,7 +125,7 @@
             <td>700000.00</td>
             <td><Button>Edit</Button><Button>Remove</Button></td>
         
-        </tr>
+        </tr> -->
 
         </tbody>
         </th>
@@ -151,41 +151,41 @@
           <h1>Items Manage</h1>
 
           <div class="box">
-            <label class="lblAbove" for="#ItemsId">Item Code</label>
-            <input type="text" />
-            <label class="lblUnder" for="#respons"
+            <label class="lblAbove" for="">Item Code</label>
+            <input id="InputItemCode" type="text" />
+            <label id="lblUnderForItemCode" style="display: none;" class="lblUnder" for=""
               >Items Id is required : patten C00-000</label
             >
             <br />
             <br />
-            <label class="lblAbove" for="#ItemsName">Items Name</label>
-            <input type="text" />
-            <label class="lblUnder" for="#respons"
+            <label class="lblAbove" for="">Items Name</label>
+            <input id="InputItemName" type="text" />
+            <label id="lblUnderForItemName" style="display: none;" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
             <br />
-            <label class="lblAbove" for="#ItemsQty"
+            <label class="lblAbove" for=""
               >Items Qty</label
             >
-            <input type="text" />
-            <label class="lblUnder" for="#respons"
+            <input id="InputItemQty" type="text" />
+            <label id="lblUnderForQty" style="display: none;" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
             <br />
-            <label class="lblAbove" for="#ItemsPrice">Items Price</label>
-            <input type="number" />
-            <label class="lblUnder" for="#respons"
+            <label class="lblAbove" for="">Items Price</label>
+            <input id="InputItemPrice" type="number" />
+            <label id="lblUnderForUntPrice" style="display: none;" class="lblUnder" for=""
               >Cus Id is required : patten C00-000</label
             >
             <br />
           </div>
           <div class="buttenBox">
-            <button id="savebtnId">Save</button>   
-            <button id="updatebtnId">Update</button>
-            <button id="getAllbtnId">Get All</button>
-            <button id="clearbtnId">Clear All</button>
+            <button id="itemsavebtnId">Save</button>   
+            <button id="itemupdatebtnId">Update</button>
+            <button id="itemgetAllbtnId">Get All</button>
+            <button id="itemclearbtnId">Clear All</button>
           </div>
         </div>
         <div class="tableDiv">
@@ -202,7 +202,7 @@
 
     </tr>
         </thead>
-        <tbody class="tableBodyId">
+        <tbody id="itemtableBodyId" class="tableBodyId">
 
             <tr>
             <td>100-0001</td>
@@ -252,9 +252,9 @@
       <div class="border-Box">
         <h1>Login</h1>
 
-        <label for="#">Email</label>
+        <label for="">Email</label>
         <input id="emailId" type="email" />
-        <label for="#">Password</label>
+        <label for="">Password</label>
         <input id="passwordId" type="text" />
 
         <button id="loginButtenId">Login now</button>
@@ -283,7 +283,12 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
-
     <!-- ======================================================================= -->
+    <script type="module" src="controller/Custormer.js"></script>
+        <script type="module" src="controller/item.js"></script>
+
+    
+    
+
   </body>
 </html>
