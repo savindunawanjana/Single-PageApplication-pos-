@@ -26,7 +26,7 @@ const runmethodAllwas = () => {
 
 runmethodAllwas();
 
-$(document).on("click", ".btn-edit", function () {
+$(document).on("click", ".edit", function () {
   const index = $(this).data("index");
 
   const item = item_array[index];
@@ -59,7 +59,7 @@ const lodeTable = () => {
       <td>${item.itemqty}</td>
       <td>${item.itemunitPrice}</td>
       <td>
-        <button class="btn btn-warning btn-edit" data-index="${index}">Edit</button>
+        <button class="btn btn-warning edit" data-index="${index}">Edit</button>
         <button class="btn btn-danger btn-delete" data-index="${index}">Delete</button>
       </td>
     </tr>`;
@@ -139,13 +139,13 @@ $("#itemsavebtnId").on("click", (e) => {
   }
 });
 
-const updateAction = $("#updatebtnId").on("click", () => {
-  const custormerId = $("#InputCustormerId").val();
-  const custormerName = $("#InputCustormerName").val();
-  const custormerAdress = $("#InputCustormerAddress").val();
-  const custormerSalary = $("#InputCustormerSalary").val();
+const updateAction = $("#itemupdatebtnId").on("click", () => {
+  const itemCode = $("#InputItemCode").val();
+  const itemName = $("#InputItemName").val();
+  const itemQty = $("#InputItemQty").val();
+  const itemPrice = $("#InputItemPrice").val();
 
-  if (!custormerId || !custormerName || !custormerAdress || !custormerSalary) {
+  if (!itemCode || !itemName || !itemQty || !itemPrice) {
     console.log("Please select the row to edit properly");
     alert("Please select the row to edit properly");
     return;
@@ -153,8 +153,8 @@ const updateAction = $("#updatebtnId").on("click", () => {
     let indexnumber = "no";
 
     //in this place i cloud not stop the loop from using break key word. so i used  some(()=>{}); insted of forEach(()=>{});
-    customer_array.some((customer, index) => {
-      if (custormerId === customer.custormerid) {
+    item_array.some((items, index) => {
+      if (itemCode === items.itemcode) {
         indexnumber = index;
         return true; // ✅ stops loop
       }
@@ -164,16 +164,18 @@ const updateAction = $("#updatebtnId").on("click", () => {
     const confarm = confirm("Do you wont to Update This ?");
 
     if (indexnumber != "no") {
-      customer_array[indexnumber].custormerid = custormerId;
-      customer_array[indexnumber].custormername = custormerName;
-      customer_array[indexnumber].custormeraddress = custormerAdress;
-      customer_array[indexnumber].custormersalary = custormerSalary;
+      item_array[indexnumber].itemcode = itemCode;
+      item_array[indexnumber].itemname = itemName;
+      item_array[indexnumber].itemqty = itemQty;
+      item_array[indexnumber].itemunitPrice = itemPrice;
 
-      $("#InputCustormerName").val("");
-      $("#InputCustormerAddress").val("");
-      $("#InputCustormerSalary").val("");
+      $("#InputItemName").val("");
+      $("#InputItemQty").val("");
+      $("#InputItemPrice").val("");
       lodeTable();
+      runmethodAllwas();
     }
     lodeTable();
+    runmethodAllwas();
   }
 });
