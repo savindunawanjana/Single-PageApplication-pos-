@@ -99,7 +99,7 @@ width: 10vw;
 height: 100vh;
 justify-content: center;
 background-color: rgb(1, 1, 27);
-
+border-radius: 10px;
 border-radius: 5px;
 }
 
@@ -110,6 +110,8 @@ border-radius: 5px;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
+border-radius: 10px;
+border: 1px solid rgb(253, 255, 254);
 
 
 }
@@ -142,7 +144,7 @@ justify-content: space-around;
         margin-bottom: 7px;
         height: 100vh;
         width: 98.8vw;
-        border:1px solid wheat;
+        border:1px solid rgb(255, 252, 247);
         border-radius: 10px;
      
       }
@@ -464,3 +466,424 @@ width: 50vw;
 
 /* ==============================Item-content--End================================ */
 
+/* ==========================================Oder-Page-development-Start==================================================== */
+.sectionConteiner .inputsMainConteiner{
+background-color: #080330;
+ /* #04011f; */
+border-top-left-radius: 10px;
+width: 90vw;
+height: 60vh;
+display: flex;
+justify-content: space-around;
+
+}
+
+.inputsMainConteiner input{
+border-radius: 5px;
+border-color: aqua;
+}
+
+.inputsMainConteiner .abovelbl{
+font-size: 20px;
+font-weight: 500;
+}
+
+.sectionConteiner{
+  color: azure;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputsMainConteiner{
+  padding-top: 10px;
+}
+
+.inputsMainConteiner .invoiceDeatilesBox{
+  width: 33vw;
+height: 50vh;
+background-color: rgb(5, 1, 33);
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+box-shadow:0 0 10px rgba(247, 255, 216, 0.514); 
+/* margin-bottom: 5vw */
+}
+.inputsMainConteiner .itemSelectionBox{ width: 33vw;
+height: 50vh;
+background-color: rgb(5, 1, 33);
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+ box-shadow:0 0 10px rgba(247, 255, 216, 0.514); ;
+}
+.inputsMainConteiner .totleBox{ width: 22vw;
+height: 47vh;
+background-color:  rgb(5, 1, 33);
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+ box-shadow:0 0 10px rgba(247, 255, 216, 0.514); ;
+}
+
+
+.tableConteiner{
+background-color: aqua;
+width: 90vw;
+height: 40vh;
+border-bottom-left-radius:10px ;
+}
+
+.invoiceDeatilesBox .hederConteiner{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+width: 33vw;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 2px;
+border-top-right-radius: 2px;
+height: 50px;
+background-color: hsl(226, 94%, 54%);
+
+}
+
+.itemSelectionBox .hederConteiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0px;
+width: 33vw;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 2px;
+border-top-right-radius: 2px;
+height: 50px;
+background-color: hsl(226, 94%, 54%);
+
+}
+
+.invoiceDeatilesBox .box{
+ margin-top: 7px;
+width: 33vw;
+border-radius: 10px;
+height: 80px;
+border: 1px solid black;
+background-color:  rgb(5, 1, 33);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.itemSelectionBox .box{
+   margin-top: 7px;
+width: 33vw;
+border-radius: 10px;
+height: 80px;
+border: 1px solid black;
+background-color: rgb(5, 1, 33);
+
+}
+/* ------------------------------------------- */
+.invoiceDeatilesBox input{
+width:12vw ;
+height:40px ;
+
+}
+/* ---------------------------------- */
+  .invoiceDeatilesBox .Onebox{
+display: flex;
+justify-content: space-around;
+
+
+   }
+
+  .invoiceDeatilesBox .Onebox .oderIdDiv{
+display: flex;
+flex-direction: column;
+   }
+
+   .invoiceDeatilesBox .Onebox .datePicerclassBox{
+display: flex;
+flex-direction: column;
+   }
+
+   /* ------------------------------------------- */
+ .invoiceDeatilesBox .Secoundbox{
+display: flex;
+justify-content: space-around;
+
+
+   }
+
+  .invoiceDeatilesBox .custormerIdSelectionBox{
+
+display: flex;
+flex-direction: column;
+
+  }
+  
+
+
+  .invoiceDeatilesBox .custormerIdSelectionBox #customerSelectelimentId{
+    width:12vw ;
+height:40px ;
+  }
+
+ .invoiceDeatilesBox .Secoundbox .showCustormerIdinput{
+  display: flex;
+flex-direction: column;
+ }
+
+ .invoiceDeatilesBox .fourthbox #inputCustormerAddress{
+ 
+width:18vw ;
+margin-left: 5.7vw;
+
+ }
+
+ .invoiceDeatilesBox .fourthbox #lblAboveId{
+margin-left: 5.7vw;
+ }
+
+
+
+ .therdbox .custormerNameboxclass{
+display: flex;
+flex-direction: column; 
+
+ }
+
+ .therdbox{
+ display: flex;
+ justify-content: space-around !important;
+ }
+
+  .therdbox .custormerNameboxSalaryclass{
+
+display: flex;
+flex-direction: column;
+
+ }
+ .fourthbox{
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+padding-right: 16vw !important;
+ }
+
+
+ .fourthbox .custormerAddressboxclass{
+
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ .itemSelectionBox .box1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* width:12vw ;
+height:40px ; */
+ }
+
+ .itemSelectionBox .box1 #customerSelectelimentId{
+width:12vw ;
+height:40px ;
+ }
+
+.itemSelectionBox .box1 #inputCustormerId{
+  width:12vw ;
+height:40px ;
+}
+
+.itemSelectionBox .box2{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+.itemSelectionBox .box2 #inputitemName{
+    width:10vw ;
+height:40px ;
+}
+
+.itemSelectionBox .box2 #inputitemPrice{
+    width:10vw ;
+height:40px ;
+}
+
+.itemSelectionBox .box2 #inputitemQty{
+    width:10vw ;
+height:40px ;
+
+}
+
+.custormerIdSelectionBox{
+  display: flex;
+  flex-direction: column;
+}
+.showCustormerIdinput{
+  display: flex;
+  flex-direction: column;
+}
+.itemSelectionBox .box2 .itemQtyClass{
+  margin-left: 1vw;
+
+}
+
+.itemSelectionBox #ItemCodeSelectelimentId{
+ width:10vw ;
+height:40px ;
+}
+
+.itemSelectionBox #inputItemCode{
+width:20vw ;
+height:40px ;
+}
+
+
+.itemSelectionBox .oderqtyClass{
+display: flex;
+flex-direction: column !important;
+}
+
+.itemSelectionBox .oderqtyClass #inputoderqty{
+ width:10vw ;
+height:40px ;
+
+}
+
+.itemSelectionBox .box4 button{
+
+  width:10vw !important;
+height:40px !important;
+ margin-right: 1vw;
+}
+
+.itemSelectionBox .box4{
+
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+
+}
+
+.totleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totleBox .box{
+   margin-top: 5px;
+width: 22vw;
+border-radius: 10px;
+height: 100px;
+border: 1px solid black;
+background-color:rgb(5, 1, 33);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.totleBox .lableboxs1{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.totleBox .lableboxs2{
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.totleBox .lableboxs2 #lableNameSubtotleid{
+
+  color: #ce021d;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.totleBox .lableboxs2 #lableSubtotleid{
+
+  color: #ce021d;
+  font-weight: 800;
+  font-size: 37px;
+}
+
+.totleBox .lableboxs1 #lableNametotleid{
+
+  color: #0801e4;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.totleBox .lableboxs1 #labltotle{
+
+    color: #0801e4;
+  font-weight: 800;
+  font-size: 37px;
+}
+.cashBox{
+  gap: 4vw  ;
+  justify-content: flex-start !important;
+}
+
+.cashBox .cashdiv{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #0cd229; */
+  width: 7vw;
+}
+
+.cashBox .cashdiv #inputitemCash{
+
+  width: 10vw;
+  height: 5vh !important;
+  
+}
+
+.cashBox .disCountDiv #inputDiscount{
+
+  width: 10vw;
+  height: 5vh !important;
+  
+}
+
+.cashBox .disCountDiv{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #0cd229; */
+  width: 7vw;
+}
+
+.balansAndButten{
+display: flex;
+align-items: center;
+justify-content: space-around !important;
+}
+
+.balansAndButten button{
+/* margin-top: px !important; */
+width: 7vw;
+height: 5vh;
+}
+
+.BalansBox #inputBalans{
+  width: 10vw;
+  height: 5vh 
+}
+
+
+/* ==========================================Oder-Page-development-End====================================================  */

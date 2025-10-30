@@ -244,7 +244,164 @@
       class="sectionConteiner OderPage"
       data-target="OderPageId"
     >
-      OderPage
+<div class="inputsMainConteiner">
+
+<div class="invoiceDeatilesBox">
+<div class="hederConteiner"><h3 style="color: rgb(255, 255, 255);">Invoice Detailes</h3></div>
+<div class="box Onebox">
+
+<div class="oderIdDiv">
+  <label id="lblAboveId" class="abovelbl" for="">Oder ID :</label>
+  <input id="inputOderId" type="text" pattern="D00-0001">
+  <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label>
+</div>
+
+<div class="datePicerclassBox">
+  <label id="lblDatePicerId" class="abovelbl" for="">Date ID :</label>
+  <input id="inputOderId" type="date" pattern="D00-0001">
+  
+</div>
+
+
+</div>
+<div class="box Secoundbox">
+
+<div class="custormerIdSelectionBox">
+  <label id="lblAbovecustormerId" class="abovelbl" for="">Custormer ID :</label>
+  <select id="customerSelectelimentId">
+  <option value="C00-001">C00-001</option>
+  <option value="C00-002">C00-002</option>
+  <option value="C00-003">C00-003</option>
+</select>
+  <!-- <label id="lblUndercustormerId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+<div class="showCustormerIdinput">
+  <label id="lblDateCustormerId" class="abovelbl" for="">Custormer Id :</label>
+  <input id="inputCustormerId" type="text">
+  
+</div>
+
+</div>
+<div class="box therdbox">
+<div class="custormerNameboxclass">
+  <label id="lblAboveId" class="abovelbl" for="">Name :</label>
+  <input id="inputCustormerName" type="text" >
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+<div class="custormerNameboxSalaryclass">
+  <label id="lblAboveId" class="abovelbl" for="">Salary :</label>
+  <input id="inputCustormerSalary" type="text">
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+</div>
+<div class="box fourthbox">
+  <div class="custormerAddressboxclass">
+  <label id="lblAboveId" class="abovelbl" for="">Address :</label>
+  <input id="inputCustormerAddress" type="text" >
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+</div>
+
+</div>
+<div class="itemSelectionBox">
+  <div class="hederConteiner"><h3  style="color: rgb(255, 255, 255);">Item Select</h3></div>
+  <div class="box box1">
+    <div class="custormerIdSelectionBox">
+  <label id="lblItemCode" class="abovelbl" for="">Item Code :</label>
+  <select id="ItemCodeSelectelimentId">
+  <option value="C00-001">100-001</option>
+  <option value="C00-002">100-002</option>
+  <option value="C00-003">100-003</option>
+</select>
+  <!-- <label id="lblUndercustormerId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+<div class="showCustormerIdinput">
+  <label id="lblItemCode" class="abovelbl" for="">Item Code :</label>
+  <input id="inputItemCode" type="text">
+  
+</div>
+
+  </div>
+<div class="box box2">
+
+  <div class="itemNameClass">
+  <label id="lblAboveId" class="abovelbl" for="">Item Name :</label>
+  <input id="inputitemName" type="text" >
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+<div class="itemPriceClass">
+  <label id="lblAboveId" class="abovelbl" for="">Price :</label>
+  <input id="inputitemPrice" type="text">
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+
+<div class="itemQtyClass">
+  <label id="lblAboveId" class="abovelbl" for="">QtyOnH :</label>
+  <input id="inputitemQty" type="text">
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+</div>
+<div class=" box box3">
+<div class="oderqtyClass">
+  <label id="lblAboveId" class="abovelbl" for="">OderQtyH :</label>
+  <input id="inputoderqty" type="text">
+  <label id="lblUnderoderqty" class="Underlbl"  for="">Please enter a amount Lower avelable itemqty</label>
+</div>
+
+</div>
+<div class="box box4">
+  <button id="AddItemButtenId">Add Item</button>
+</div>
+</div>
+<div class="totleBox">
+  <div class="box lableboxs1">
+<label id="lableNametotleid" for="">Totle :</label>
+<label id="labltotle" for="">00.00 rs/=</label>
+  </div>
+<div class="box lableboxs2">
+  <label id="lableNameSubtotleid" for="">SubTotle :</label> 
+<label id="lableSubtotleid" for="">00.00 rs/=</label>
+</div>
+<div class="box cashBox">
+<div class="cashdiv">
+  <label id="lblcachTitle" class="abovelbl" for="">Cash :</label>
+  <input id="inputitemCash" type="number">
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+
+<div class="disCountDiv">
+  <label id="lblDiscountTitle" class="abovelbl" for="">Discount :</label>
+  <input id="inputDiscount" type="number">
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+</div>
+<div class="box balansAndButten">
+<div class="BalansBox">
+  <label id="lblBalansTitle" class="abovelbl" for="">Balance :</label>
+  <input id="inputBalans" type="number">
+  <!-- <label id="lblUnderOderId" class="Underlbl"  for="">Oder Id patten id :D00-0001</label> -->
+</div>
+
+<button style="background-color: rgb(6, 181, 47); border-radius: 5px;" id="PurchesButten">Purchase</button>
+
+
+</div>
+</div>
+
+</div>
+
+<div class="tableConteiner"></div>
+
+
     </section>
 
     <!-- =====================================loginPage-start======================================= -->
