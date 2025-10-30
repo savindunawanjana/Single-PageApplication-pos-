@@ -167,6 +167,7 @@ const updateAction = $("#updatebtnId").on("click", () => {
       if (custormerId === customer.custormerid) {
         indexnumber = index;
         return true;
+        //tru nam brek wenawa loop eka naththan digatama wnawa
       }
       return false;
     });
