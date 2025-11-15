@@ -152,11 +152,10 @@ const updateAction = $("#itemupdatebtnId").on("click", () => {
   } else {
     let indexnumber = "no";
 
-    //in this place i cloud not stop the loop from using break key word. so i used  some(()=>{}); insted of forEach(()=>{});
     item_array.some((items, index) => {
       if (itemCode === items.itemcode) {
         indexnumber = index;
-        return true; // ✅ stops loop
+        return true; 
       }
       return false;
     });

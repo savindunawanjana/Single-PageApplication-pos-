@@ -18,11 +18,7 @@ const runmethodAllwas = () => {
     }
   }
 };
-// (function init() {
-//   runmethodAllwas();
-//   console.log(" This runs immediately when the file loads!");
-//
-// })();
+
 
 runmethodAllwas();
 

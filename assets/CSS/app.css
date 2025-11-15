@@ -885,5 +885,63 @@ height: 5vh;
   height: 5vh 
 }
 
+.tableContainer{
+   overflow-y: auto;
+}
+
+
+  .tableItem {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* Header row */
+  
+  .tableHeader th {
+  position: sticky;
+    background-color: #1e3799; /* dark blue */
+    color: rgb(59, 2, 2);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 15px;
+  }
+
+  /* Table body rows */
+  .tableBodyClassitem td {
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Zebra stripe effect */
+  .tableBodyClassitem tr:nth-child(even) {
+    background-color: #074391;
+  }
+
+  /* Hover effect */
+  .tableBodyClassitem tr:hover {
+    background-color: #dfe6f2;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Responsive table (optional) */
+  @media (max-width: 768px) {
+    .tableItem {
+      font-size: 14px;
+    }
+
+    .tableHeader th,
+    .tableBodyClassitem td {
+      padding: 10px;
+    }
+  }
+
 
 /* ==========================================Oder-Page-development-End====================================================  */

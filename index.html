@@ -40,6 +40,7 @@
       HomePage
     </section>
     <!-- ///////////////////////////////////////////////////// -->
+     
     <section
       id="CustormerPageId"
       class="sectionConteiner CustormerPage"
@@ -239,6 +240,8 @@
         </div>
       </div>
     </section>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\OderPage srartsed\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
     <section
       id="OderPageId"
       class="sectionConteiner OderPage"
@@ -257,7 +260,7 @@
 
 <div class="datePicerclassBox">
   <label id="lblDatePicerId" class="abovelbl" for="">Date ID :</label>
-  <input id="inputOderId" type="date" pattern="D00-0001">
+  <input id="DatePicerId" type="date" pattern="D00-0001">
   
 </div>
 
@@ -351,7 +354,7 @@
 <div class=" box box3">
 <div class="oderqtyClass">
   <label id="lblAboveId" class="abovelbl" for="">OderQtyH :</label>
-  <input id="inputoderqty" type="text">
+  <input id="inputoderqty" type="number">
   <label id="lblUnderoderqty" class="Underlbl"  for="">Please enter a amount Lower avelable itemqty</label>
 </div>
 
@@ -396,8 +399,38 @@
 </div>
 
 </div>
+<div class="tableContainer">
+  <table class="tableItem">
+    <thead class="tableHeader">
+      <tr>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Items Qty</th>
+        <th>Unit Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
 
-<div class="tableConteiner"></div>
+    <tbody id="itemtableBodyIditem" class="tableBodyClassitem">
+      <tr>
+        <td>100-0001</td>
+        <td>Apple</td>
+        <td>20</td>
+        <td>60.0</td>
+        <td>1200</td>
+      </tr>
+
+      <tr>
+        <td>100-0002</td>
+        <td>Mango</td>
+        <td>20</td>
+        <td>70.0</td>
+        <td>1400</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 
     </section>
@@ -422,7 +455,7 @@
 
     <!-- ======================================================================= -->
     <script src="assets/lib/jQuery/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <!-- <script  src="assets/js/app.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -441,8 +474,9 @@
     <!-- ======================================================================= -->
     <script type="module" src="controller/Custormer.js"></script>
         <script type="module" src="controller/item.js"></script>
-
          <script type="module" src="controller/Oder.js"></script>
+          <script type="module" src="assets/js/app.js"></script>
+
 
     
     
